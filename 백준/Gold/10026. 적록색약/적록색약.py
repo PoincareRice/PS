@@ -45,7 +45,7 @@ for row in range(line_num):
         if (arr2[row][col] == 'R' or arr2[row][col] == 'G'):
             for movement in movements:
                 row_move = row + movement[0]
-                col_move = col + movement[0]
+                col_move = col + movement[1]
                 if (row_move>=0 and row_move<line_num) and (col_move>=0 and col_move<len(arr2[row])):
                     if (arr2[row_move][col_move] == 'R' or arr2[row_move][col_move] == 'G'):
                         arr2[row][col] = 'R'
